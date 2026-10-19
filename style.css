@@ -1,0 +1,267 @@
+
+/* ===== PENGATURAN DASAR ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* ===== KONTEN UTAMA ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* ===== TOMBOL FORM PESAN ===== */
+.btn-form {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.btn-form:hover {
+    background-color: #0b5ed7;
+}
+
+/* ===== TABEL MAHASISWA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #eaf0f9;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #eef4ff;
+}
+
+/* ===== LINK DAN TOMBOL DETAIL ===== */
+a {
+    color: #0d6efd;
+}
+
+table a {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+table a:hover {
+    background-color: #0b5ed7;
+}
+
+/* ===== STATUS KELULUSAN ===== */
+td.lulus {
+    color: #198754;
+    font-weight: bold;
+}
+
+td.tidak-lulus {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* ===== FORM PESAN ===== */
+form {
+    max-width: 600px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 18px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+
+/* ===== HALAMAN DETAIL DAN KONFIRMASI ===== */
+p {
+    margin: 10px 0;
+}
+
+.container > a:not(.btn-form) {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* ===== TAMPILAN HP ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    form {
+        padding: 16px;
+    }
+}
+td.tidak-lulus {
+    color: red;
+    font-weight: bold;
+}
+
+/* Form pesan mahasiswa */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+/* Tombol kirim */
+form button {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Tombol kembali */
+.btn-kembali {
+    display: inline-block;
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.btn-kembali:hover {
+    background-color: #565e64;
+}
